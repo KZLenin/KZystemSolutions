@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --color-nigth:#1C1C2E;
+    --color-RedOrange:#e1364a;
+    --color-logo:#00e6cc;
+    --breakpoint-sm: 340px;
+    --breakpoint-md: 540px;
+    --breakpoint-lg: 768px;
+    --breakpoint-xl: 1180px;
+
+    --font-Just:"Jost", "sans-serif";
+    --font-Lobster: "Lobster Two", "sans-serif";
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 12px;
+    md:padding-inline: 32px
+}
+/*
+@media (min-width: 540px) {
+    .container {
+      padding-inline: 32px;  /* Padding para tamaños `md` en adelante *\/
+    }
+}*/
+
+section{
+    @apply py-20 md:py-28;
+}
+
+h1{
+    @apply text-3xl md:text-4xl xl:text-5xl font-bold
+}
+
+body{
+    @apply bg-nigth text-white font-Just tracking-wider
+}
+
+.nav-link{
+    @apply text-lg font-bold duration-300
+}
+
+.nav-link:hover{
+    @apply text-RedOrange;
+}
+
